@@ -3,7 +3,8 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'python --version'
+             echo "Running ${env.BUILD_ID}"
+   	sh 'python --version'
             }
         }
     }
